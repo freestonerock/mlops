@@ -2,6 +2,12 @@ name: MLOps pipeline
 
 on:
   workflow_dispatch:
+    inputs:
+      # Optional: define inputs for the manual run
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
 
 jobs:
 
